@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //Check it is comming from a form
     $u_text = filter_var($_POST["user_text"], FILTER_SANITIZE_STRING);
     $u_tele = filter_var($_POST["user_tele"], FILTER_SANITIZE_STRING);
 
+    // Validations
     if (empty($u_name)) {
         die("Please enter your name");
     }
